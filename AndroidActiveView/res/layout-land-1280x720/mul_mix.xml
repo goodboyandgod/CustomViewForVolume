@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_backgroud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/multi"
+        android:layout_width="400dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/volume_backgroud" >
+
+        <FrameLayout
+            android:id="@+id/custom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/music_icon" >
+
+            <LinearLayout
+                android:id="@+id/volume_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/volume_draw_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/music_icon"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/music_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="68dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/music_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="李孝利-最美北京"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/music_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="最流行歌曲"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" 
+        android:layout_marginBottom="10dp">
+
+        <ImageButton
+            android:id="@+id/music_play"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffffff"
+            android:src="@drawable/music_play" />
+
+        <ImageButton
+            android:id="@+id/music_before"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="34dp"
+            android:layout_toLeftOf="@+id/music_play"
+            android:background="#ffffffff"
+            android:src="@drawable/musice_before" />
+
+        <ImageButton
+            android:id="@+id/music_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/music_before"
+            android:layout_marginLeft="34dp"
+            android:layout_toRightOf="@+id/music_play"
+            android:background="#ffffffff"
+            android:src="@drawable/msuic_next" />
+    </RelativeLayout>
+
+</RelativeLayout>
