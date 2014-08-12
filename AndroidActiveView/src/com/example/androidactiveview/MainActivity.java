@@ -102,8 +102,8 @@ public class MainActivity extends ActionBarActivity {
 		paint.setColor(0XFFB3B500);
 		paint.setAntiAlias(true);
 //
-//		addCustomView(layout1);
-//		addCustomViewForAbove(layout2, 10);
+		addCustomView(layout1);
+		addCustomViewForAbove(layout2, 10);
 
 	}
 	private class MTimer extends TimerTask {
